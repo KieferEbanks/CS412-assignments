@@ -33,3 +33,19 @@ def home_page(request: HttpRequest) -> HttpResponse:
     }
 
     return render(request, template_name, context)
+
+
+def about(request: HttpRequest) -> HttpResponse:
+    '''A function that responds to the about request using a template'''
+
+    template_name = 'hw/about.html'
+
+    #dictionary of context variables to pass to the template
+    context = {
+        "time": time.ctime(),
+        "letter1": chr(random.randint(65, 90)), #random uppercase letter
+        "letter2": chr(random.randint(65, 90)),
+        "number": random.randint(1, 10),
+    }
+
+    return render(request, template_name, context)
