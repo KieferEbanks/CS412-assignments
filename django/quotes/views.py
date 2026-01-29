@@ -50,6 +50,7 @@ def show_all(request):
     '''
     A view to display all quotes.
     '''
+
     template_name = 'quotes/show_all.html'
 
     
@@ -67,4 +68,4 @@ def about(request):
     
     template_name = 'quotes/about.html'
     
-    return render(request, template_name, context)
+    return render(request, template_name)

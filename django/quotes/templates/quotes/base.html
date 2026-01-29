@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title> Base</title>
+    </head>
+    <body>
+        <nav>
+            <li>
+                <a href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
+                <a href="{% url 'about' %}">About</a>
+            </li>
+            <li>
+                <a href="{% url 'quote' %}">Quotes</a>
+            </li>
+            <li>
+                <a href="{% url 'show_all' %}">All Quotes</a>
+            </li>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+
+        <footer>
+            <p>I hope you got inspired by these quotes!</p>
+
+        </footer>
+    </body>
+</html>
