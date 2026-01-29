@@ -1,3 +1,10 @@
+# File: views.py
+# Author: Kiefer Ebanks (kebanks@bu.edu), 1/27/20026
+# Description: The views file for the quotes app
+# Creating the different views functions that handle the different http calls for different pages
+
+
+
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest # had to import these to handle HTTP requests and responses
 
