@@ -24,7 +24,3 @@ urlpatterns = [
     path('hw/', include('hw.urls')),
     path('quotes/', include('quotes.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) # configuring static files serving
-
-
-if settings.DEBUG:
-    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATICFILES_DIRS[0] if settings.STATICFILES_DIRS else None)

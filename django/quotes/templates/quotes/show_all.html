@@ -21,11 +21,13 @@ links to base.html template to display the quotes and images -->
         {% endfor %}
 
         <h1>All Images</h1>
+        <div class="images-container">
         {% for image in image_list %}
         <ul>
             <img src="{{image}}" alt="Image">
         </ul>
         {% endfor %}
+        </div>
 
         {% endblock %}
     </body>
